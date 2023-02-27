@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<div style="color:red;font-size:50px;">
+			 <script language="JavaScript">
+			 var liczba_wes=32;
+				 for(i=0;i<=15;i++)
+				 {
+					var pierwiastek2=Math.sqrt(liczba_wes);
+					var pierwiastek4=Math.sqrt(pierwiastek2);
+					document.write("<sup></sup>√"+liczba_wes+"="+pierwiastek2.toFixed(2)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+					document.write("<sup>4</sup>√"+liczba_wes+"="+pierwiastek4.toFixed(2)+"<br>");
+					liczba_wes++;
+					if(i%3==0)
+					{
+						confirm("dalej, to wciśnij ok");
+					}
+				 }
+			 </script>
+		</div>
+	</body>
+</html>

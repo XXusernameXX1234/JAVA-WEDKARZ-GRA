@@ -1,0 +1,40 @@
+<html>
+	<body>
+		<div style="color:red;font-size:50px;">
+			 <script language="JavaScript">
+				function parzyste(){
+					var a_wes=document.getElementById("a").value;
+					var b_wes=document.getElementById("b").value;
+					if(a_wes<b_wes)
+					{
+						for(a_wes;a_wes<=b_wes;a_wes++)
+						{
+							if(a_wes%2!=0)
+							{
+								
+								document.write("<font color=green>"+a_wes+"</font><br>");
+							}
+						}
+					}
+					
+					
+					else if(a_wes>b_wes)
+					{
+						for(a_wes;a_wes>=b_wes;a_wes--)
+						{
+							if(a_wes%2!=0)
+							{
+								document.write("<font color=blue>"+a_wes+"</font><br>");
+							}
+						}
+					}
+				}
+			 </script>
+		</div>
+		<form onsubmit="parzyste(this.a.value,this.b.value);return false;">
+			<input type="text" id="a"/>
+			<input type="text" id="b"/>
+			<input type="submit">
+		</form>
+	</body>
+</html>
